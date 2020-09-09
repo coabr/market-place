@@ -1,6 +1,4 @@
-![image](https://user-images.githubusercontent.com/50220493/92539946-73da1e00-f219-11ea-8508-62af41e5e38c.png)
-
-#                   Market Place 
+![market-place(1)](https://user-images.githubusercontent.com/50220493/92542503-4b552280-f21f-11ea-9560-0e12873e06ee.gif)
 
 ## Lista de Conteúdos
 
