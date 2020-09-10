@@ -16,7 +16,7 @@
 
 ## Descrição do projeto 
 
-Este é um projeto de um market place feito em rails, para pessoas de uma mesma empresa. Elas poderão se cadastrar no sistema e ver imagens de produtos que seus colegas de trabalho estão vendendo, podendo combinar valores e formas de entregas por meio do aplicativo.
+Este é um projeto de um market place feito em rails, para pessoas de uma mesma empresa. Elas poderão se cadastrar no sistema e ver imagens de produtos que seus colegas de trabalho estão vendendo, podendo combinar valores e formas de entregas por meio do aplicativo. *Status do projeto*: Em andamento.
 
 ## Pré-requisitos :package:
 
