@@ -4,12 +4,12 @@
 
 <a href="<%= new_user_session_path %>">Log in</a>
 
-<% if current_user.profile_complete? %>
+<% if current_user && current_user.profile_complete? %>
   <div>
     show products
-  </div>
+  </div>    
 <% else %>
   <div>
-    don't show products
+    Fill your profile info <%= link_to "here", edit_user_registration_path %>
   </div>
 <% end %>
