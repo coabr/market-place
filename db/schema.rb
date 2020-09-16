@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_10_012318) do
+ActiveRecord::Schema.define(version: 2020_09_15_235805) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -20,18 +20,13 @@ ActiveRecord::Schema.define(version: 2020_09_10_012318) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "workers", force: :cascade do |t|
     t.string "full_name"
     t.string "social_name"
-    t.datetime "birth_date"
+    t.datetime "date_of_birth"
     t.string "position"
-    t.string "section"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "sector"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

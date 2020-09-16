@@ -3,3 +3,13 @@
 <a href="<%= new_user_registration_path %>">Sign up</a>
 
 <a href="<%= new_user_session_path %>">Log in</a>
+
+<% if current_user.profile_complete? %>
+  <div>
+    show products
+  </div>
+<% else %>
+  <div>
+    don't show products
+  </div>
+<% end %>
