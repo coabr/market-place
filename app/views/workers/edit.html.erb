@@ -1,0 +1,27 @@
+<% current_user.errors.full_messages.each do |message| %>
+  <p><%= message %></p>
+<% end %>
+
+<%= form_with model: current_user, url: worker_path do |f| %>
+  <div>
+    <%= f.label :full_name, 'Full name' %>
+    <%= f.text_field :full_name %>
+  </div>
+  <div>
+    <%= f.label :social_name, 'Social name' %>
+    <%= f.text_field :social_name %>
+  </div>
+  <div>
+    <%= f.label :date_of_birth, 'Date of birth' %>
+    <%= f.datetime_field :date_of_birth %>
+  </div>
+  <div>
+    <%= f.label :position, 'Position' %>
+    <%= f.text_field :position %>
+  </div>
+  <div>
+    <%= f.label :sector, 'sector' %>
+    <%= f.text_field :sector %>
+  </div>
+    <%= f.submit "Submit" %>
+<% end %>
